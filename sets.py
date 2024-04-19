@@ -1,5 +1,6 @@
 #set_collection = {"charan",13,5,3}
 #print(set_collection)
-a = [1,2,3,4,5,6]
-a.pop(2)
-print(a)
+empty_set = set()
+empty_set.add("charan")
+empty_set.add("charan")
+print(empty_set)
