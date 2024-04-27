@@ -30,7 +30,7 @@ def deposit():
                 break
             else:
                 print("Amount must be greater than 0")
-        else:
+        else: 
             print("please enter a number.")
     return amount
 
