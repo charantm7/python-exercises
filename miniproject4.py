@@ -1,7 +1,9 @@
 master_password = input("Please enter your password: ")
 
 def view():
-    pass
+    with open('password.txt','r') as f:
+        for line in f.readlines():
+            print(line.rstrip())
 
 def add():
     name = input("Account name: ")
