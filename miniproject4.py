@@ -1,9 +1,13 @@
+from cryptography.fernet import Fernet
+
 master_password = input("Please enter your password: ")
 
 def view():
     with open('password.txt','r') as f:
         for line in f.readlines():
-            print(line.rstrip())
+            data = line.rstrip()
+            user,passw = data.split("|")
+            print("User: "+user+"|"+"password: "+passw)
 
 def add():
     name = input("Account name: ")
