@@ -1,5 +1,11 @@
 import qrcode as qrc
 
-img = qrc.make("https://www.youtube.com/channel/UCaDhA1cI7CY3r_Nf0A7xFiw")
+from PIL import Image
 
-img.save("charan_youtube_channel.png")
+qr = qrc.QRCode(version=1,error_correction=qrc.constants.ERROR_CORRECT_H,box_size=10,border=5)
+
+qr.add_data("https://github.com/charantm7")
+qr.make(fit=True)
+
+img = qr.make_image(fill_color="orange",back_color="green")
+img.save("charan_github_profile.png")
