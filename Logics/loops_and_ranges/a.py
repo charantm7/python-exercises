@@ -1,0 +1,3 @@
+import multilplication_table
+
+multilplication_table.multiplication(5)
