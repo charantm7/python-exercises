@@ -29,10 +29,14 @@ class MyCar():
 if __name__ == "__main__":
 
     # create an object and print it by accessing it.
-    car = MyCar("ferari", 70)
-    print("before deletion", car)
+    # car = MyCar("ferari", 70)
+    # print("before deletion", car)
 
-    car.name = "bmw"
-    print("modified object", car)
+    # car.name = "bmw"
+    # print("modified object", car)
+
+    while True:
+        r = input("Enter a string: ")
+        print("yes" if r == r[::-1] else "no")
 
     # print(car.display())
