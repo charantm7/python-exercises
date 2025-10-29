@@ -1,7 +1,7 @@
 digits = 13344345
 
 # string conversion
-# print(len(str(digits)))
+print(len(str(digits)))
 
 
 if digits < 0:
